@@ -14,10 +14,9 @@ class User extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @var object
      */
     protected $fillable = [
-        'name',
         'email',
         'password',
     ];
@@ -29,7 +28,6 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
 
     /**
@@ -38,6 +36,5 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
     ];
 }

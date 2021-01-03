@@ -123,6 +123,9 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'jwt_secret' => env('JWT_SECRET'),
+    'jwt_time' => env('2d'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -165,6 +168,7 @@ return [
         /*
          * Package Service Providers...
          */
+        L5Swagger\L5SwaggerServiceProvider::class,
 
         /*
          * Application Service Providers...
